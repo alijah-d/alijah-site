@@ -98,7 +98,6 @@ return (
             <Button
                 variant="ghost"
                 p={2}
-                href={navItem.href ?? '#'}
                 fontSize={'md'}
                 fontWeight={700}
                 color={linkColor}
