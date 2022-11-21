@@ -61,7 +61,7 @@ import { EMAIL } from '../../lib/constant';
                         'radial(gray.600 1px, transparent 1px)'
                         )}
                         backgroundSize="20px 20px"
-                        opacity="0.4"
+                        opacity="0.35"
                         height="100%"
                     />
                 </Box>
@@ -82,11 +82,10 @@ import { EMAIL } from '../../lib/constant';
                 _hover={{ bg: '#0869da' }}
                 leftIcon={<EmailIcon />}
                 boxShadow='xl' p='6' rounded='md'
-                width={'550px'}
                 justifyContent={'flex-start'}>
                 
                 <Text color={useColorModeValue('white', 'gray.900')}>
-                Say hello &#x2192;
+                    Say hello &#x2192;
                 </Text>
                 
               </Button>
