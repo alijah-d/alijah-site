@@ -25,7 +25,7 @@ import { EMAIL } from '../../lib/constant';
           spacing={{ base: 8, md: 10 }}
           py={{ base: 20, md: 28 }}
           direction={{ base: 'column', md: 'row' }}>
-          <Stack flex={1} spacing={{ base: 5, md: 1 }}>
+          <Stack flex={1} spacing={{ base: 5, md: 3 }}>
             <Box
             display="flex"
             flex="1"
@@ -51,7 +51,26 @@ import { EMAIL } from '../../lib/constant';
                     </Text>
 
                     <br/>
-                    <br/>
+
+                    <Link href={`mailto:${EMAIL}`} >
+                        <Button
+                            variant={'solid'}
+                            size={'lg'}
+                            fontWeight={'normal'}
+                            px={6}
+                            colorScheme={'messenger'}
+                            bg={'#1982FC'}
+                            _hover={{ bg: '#0869da' }}
+                            leftIcon={<EmailIcon />}
+                            boxShadow='xl' p='6' rounded='md'
+                            justifyContent={'flex-start'}>
+                            
+                            <Text color={useColorModeValue('white', 'gray.900')}>
+                                Say hello &#x2192;
+                            </Text>
+                            
+                        </Button>
+                    </Link>
                 </Box>
                 
                 <Box zIndex="1" width="100%" position="absolute" height="100%">
@@ -71,25 +90,11 @@ import { EMAIL } from '../../lib/constant';
               spacing={{ base: 4, sm: 6 }}
               direction={{ base: 'column', sm: 'row' }}>
 
-            <Link href={`mailto:${EMAIL}`} >
-              <Button
-                variant={'solid'}
-                size={'lg'}
-                fontWeight={'normal'}
-                px={6}
-                colorScheme={'messenger'}
-                bg={'#1982FC'}
-                _hover={{ bg: '#0869da' }}
-                leftIcon={<EmailIcon />}
-                boxShadow='xl' p='6' rounded='md'
-                justifyContent={'flex-start'}>
+            <Box
+            marginLeft={{ base: '0', sm: '5%' }}>
                 
-                <Text color={useColorModeValue('white', 'gray.900')}>
-                    Say hello &#x2192;
-                </Text>
-                
-              </Button>
-              </Link>
+            </Box>
+              
             </Stack>
           </Stack>
           <Flex
