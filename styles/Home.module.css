@@ -12,6 +12,13 @@
   align-items: center;
 }
 
+.background-image {
+  height: 100%;
+  background: radial-gradient(gray.400 1px, transparent 1px);
+  background-size: 20px 20px;
+  z-index: 0;
+}
+
 .footer {
   display: flex;
   flex: 1;

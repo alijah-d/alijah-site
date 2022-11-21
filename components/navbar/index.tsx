@@ -59,7 +59,7 @@ return (
             textAlign={useBreakpointValue({ base: 'center', md: 'left' })}
             fontFamily={'heading'}
             color={useColorModeValue('gray.800', 'white')}>
-            <img src='logo.png' alt="me" width="64" height="64"/>
+            <img src='logo.png' alt="me" width="48" height="48"/>
         </Text>
         </Flex>
 
@@ -250,7 +250,7 @@ const NAV_ITEMS: Array<NavItem> = [
     label: 'Blog',
     children: [
     {
-        label: 'Papa mo',
+        label: 'Papa mo blog',
         subLabel: 'Papa mo blog',
         href: '#',
     },
