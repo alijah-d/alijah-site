@@ -19,7 +19,14 @@ import { EMAIL } from '../../lib/constant';
   
 export default function LandingPage() {
 return (
-    <Container maxW={'7xl'}>
+    <Container 
+    bgGradient={useColorModeValue(
+        'radial(gray.400 1px, transparent 1px)',
+        'radial(gray.600 1px, transparent 1px)'
+        )}
+        backgroundSize="20px 20px"
+        height="100%"
+    maxW={'7xl'}>
     <Stack
         align={'center'}
         spacing={{ base: 8, md: 10 }}
@@ -72,18 +79,7 @@ return (
                     </Button>
                 </Link>
             </Box>
-            
-            <Box zIndex="1" width="100%" position="absolute" height="100%">
-                <Box
-                    bgGradient={useColorModeValue(
-                    'radial(gray.400 1px, transparent 1px)',
-                    'radial(gray.600 1px, transparent 1px)'
-                    )}
-                    backgroundSize="20px 20px"
-                    opacity="0.35"
-                    height="100%"
-                />
-            </Box>
+
         </Box>
         
         <Stack
