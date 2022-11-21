@@ -7,10 +7,11 @@ import {
     useColorModeValue,
     VisuallyHidden,
   } from '@chakra-ui/react';
-import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
 import { GrMail } from 'react-icons/gr';
 import { ReactNode } from 'react';
-
+import Link from 'next/link';
+import { GITHUB, LINKEDIN, TWITTER } from '../../lib/constant';
 
 const SocialButton = ({
     children,
@@ -29,6 +30,7 @@ const SocialButton = ({
         h={8}
         cursor={'pointer'}
         as={'a'}
+        target={'_blank'}
         href={href}
         display={'inline-flex'}
         alignItems={'center'}
@@ -47,7 +49,7 @@ const SocialButton = ({
 export default function Footer() {
 return (
     <Box
-    bg={useColorModeValue('white', 'gray.900')}
+    bg={useColorModeValue('white', 'gray.800')}
     color={useColorModeValue('gray.700', 'gray.200')}>
     <Box py={10}>
         <Flex
@@ -68,14 +70,14 @@ return (
         }}>
         
         <Stack direction={'row'} spacing={6}>
-          <SocialButton label={'LinkedIn'} href={'#'}>
+          <SocialButton label={'LinkedIn'} href={LINKEDIN}>
             <FaLinkedin />
           </SocialButton>
-          <SocialButton label={'Github'} href={'#'}>
+          <SocialButton label={'Github'} href={GITHUB}>
             <FaGithub />
           </SocialButton>
-          <SocialButton label={'Email'} href={'#'}>
-            <GrMail />
+          <SocialButton label={'Twitter'} href={TWITTER}>
+            <FaTwitter />
           </SocialButton>
         </Stack>
 

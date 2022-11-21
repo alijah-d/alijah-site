@@ -15,6 +15,7 @@ import {
     useBreakpointValue,
     useDisclosure,
     useColorMode,
+    Kbd,
   } from '@chakra-ui/react';
   import {
     HamburgerIcon,
@@ -55,12 +56,17 @@ return (
         />
         </Flex>
         <Flex flex={{ base: 1 }} justify={{ base: 'center', md: 'start' }}>
-        <Text
-            textAlign={useBreakpointValue({ base: 'center', md: 'left' })}
-            fontFamily={'heading'}
-            color={useColorModeValue('gray.800', 'white')}>
-            <img src='logo.png' alt="me" width="48" height="48"/>
-        </Text>
+            <Text
+                textAlign={useBreakpointValue({ base: 'center', md: 'left' })}
+                fontFamily={'heading'}
+                color={useColorModeValue('gray.800', 'white')}>
+                <img src='logo.png' alt="me" width="48" height="48"/>
+            </Text>
+            <Stack>
+                <Kbd className='typewriter'>
+                    <span>Hi! </span>
+                </Kbd>
+            </Stack>
         </Flex>
 
         <Stack

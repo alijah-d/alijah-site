@@ -2,9 +2,9 @@ import { Box, useColorModeValue } from '@chakra-ui/react';
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Footer from '../components/footer';
+import LandingPage from '../components/hero';
 
 import Nav from '../components/navbar';
-import Body from '../sections/blog';
 
 const Home: NextPage = () => {
 
@@ -18,11 +18,11 @@ const Home: NextPage = () => {
         />
       </Head>
 
-      <Nav />
-
       <main>
+        <Nav />
+        <LandingPage />
         
-      {/* <Box zIndex="1" width="100%" position="absolute" height="100%">
+        {/* <Box zIndex="1" width="100%" position="absolute" height="100%">
           <Box
             bgGradient={useColorModeValue(
               'radial(gray.400 1px, transparent 1px)',
@@ -32,11 +32,13 @@ const Home: NextPage = () => {
             opacity="0.4"
             height="100%"
           />
-        </Box> */}
-        <Body />
+        </Box>    */}
       </main>
-
-      <Footer />
+      <br />
+      <br />
+      <footer>
+        <Footer />
+      </footer>
     </>
   )
 }
