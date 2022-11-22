@@ -7,9 +7,9 @@ import {
 		useColorModeValue,
 		VisuallyHidden,
 	} from '@chakra-ui/react';
-import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaMedium, FaTwitter } from 'react-icons/fa';
 import { ReactNode } from 'react';
-import { GITHUB, LINKEDIN, TWITTER } from '../../lib/constant';
+import { GITHUB, LINKEDIN, MEDIUM, TWITTER } from '../../lib/constant';
 
 const SocialButton = ({
 		children,
@@ -79,6 +79,9 @@ return (
 					</SocialButton>
 					<SocialButton label={'Github'} href={GITHUB}>
 						<FaGithub />
+					</SocialButton>
+					<SocialButton label={'Medium'} href={MEDIUM}>
+						<FaMedium />
 					</SocialButton>
 					<SocialButton label={'Twitter'} href={TWITTER}>
 						<FaTwitter />
